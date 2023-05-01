@@ -74,9 +74,27 @@ a{
 .hero{
     margin-top: 64px;
 }
+
+.hero .content {
+    display: flex;
+}
+
 .hero .hero-img{
     width: 470px;
     height: 685px;
     border-radius: 20px;
 }
+.hero .img-block{
+    margin-right: 230px;
+}
 
+.hero .info .title{
+    font-weight: 500;
+    font-size: 5.8rem;
+    line-height: 1.17;
+
+    /* or 117% */
+    letter-spacing: -0.02em;
+
+    color: #171100;
+}
