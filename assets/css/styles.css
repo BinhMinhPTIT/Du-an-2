@@ -1,100 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
 }
-*{
-    box-sizing: border-box;
-}
-html{
-    font-size: 62.5%;
-    background: #FFFCF4;
-}
 
-
-.content{
-    width: 1170px;
-    max-width: calc(100% - 135px);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 36px;
-}
-
-a{
+/* Common */
+a {
     text-decoration: none;
 }
 
-.btn{
+.btn {
     display: inline-block;
-    min-width: 144px;
-    padding: 11px 41px;
+    min-width: 118px;
+    padding: 0 16px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #ffffff;
     background: #171100;
     border-radius: 24.5px;
-    font-weight: 600;
-    font-size: 1.4rem;
-    text-align: center;
-    color: #FFFFFF;
-}
-.btn:hover {
-    opacity: 0.9;
 }
 
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/* Heading  */
-.navbar {
+/* Header */
+.header {
+    background: #fffcf4;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+}
+
+.header .body {
     display: flex;
     align-items: center;
+    padding: 36px 0 8px;
 }
 
-.navbar ul{
-    display: flex;
-    margin-left: 512px;
-    gap: 42px;
+.nav {
+    margin-left: auto;
 }
 
-.navbar ul a{
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.75;
-    text-align: center;
-    color: #5F5B53;
-}
-.navbar .actions{
-    margin-left: 70px;
-}
-
-.navbar .actions a{
-    font-weight: 600;
-    font-size: 1.6rem;
-    line-height: 1.75;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-
-.hero{
-    margin-top: 64px;
-}
-
-.hero .content {
+.nav ul {
     display: flex;
 }
 
-.hero .hero-img{
-    width: 470px;
-    height: 685px;
-    border-radius: 20px;
-}
-.hero .img-block{
-    margin-right: 230px;
+.nav a {
+    position: relative;
+    padding: 8px 21px;
+    font-size: 1.6rem;
+    color: #5f5b53;
 }
 
-.hero .info .title{
-    font-weight: 500;
-    font-size: 5.8rem;
-    line-height: 1.17;
-
-    /* or 117% */
-    letter-spacing: -0.02em;
-
+.nav a:hover,
+.nav li.active a {
+    text-shadow: 1px 0 0 currentColor;
     color: #171100;
+}
+
+.nav li.active a::after {
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+}
+
+.header .sign-up-btn {
+    min-width: 144px;
+}
+
+.header .action {
+    margin-left: 49px;
 }
